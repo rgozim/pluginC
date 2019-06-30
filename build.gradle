@@ -5,6 +5,12 @@ plugins {
     id 'org.example.plugin-a' version '1.0.0'
 }
 
+//
+// NO VERSION REQUIRED HERE
+//
+group = "org.example"
+
+
 repositories {
     mavenCentral()
     mavenLocal()
