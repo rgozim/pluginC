@@ -1,0 +1,20 @@
+plugins {
+    id 'groovy'
+    id 'maven-publish'
+    id 'java-gradle-plugin'
+    id 'org.example.plugin-a' version '1.0.0'
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+gradlePlugin {
+    plugins {
+        register("plugin-c") {
+            id = "org.example.plugin-c"
+            implementationClass = "org.example.PluginC"
+        }
+    }
+}
